@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Alto Contraste */
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast .container {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+body.high-contrast .header {
+    background-color: #000;
+    border-bottom: 2px solid #fff;
+}
+
+body.high-contrast .button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+body.high-contrast .button:hover {
+    background-color: #333;
+}
+
+/* Tamanho da Fonte */
+body.large-text {
+    font-size: 1.2rem;
+}
+
+body.large-text .button {
+    font-size: 1.2rem;
+    padding: 14px 18px;
+}
+
+body.xlarge-text {
+    font-size: 1.5rem;
+}
+
+body.xlarge-text .button {
+    font-size: 1.5rem;
+    padding: 16px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333333;
+}
+
+.content {
+    padding: 0 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.checkbox input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group.checkbox label {
+    margin-bottom: 0;
+}
+
+select, input[type="text"], input[type="checkbox"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+select {
+    width: 100%;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-icon button {
+    background-color: #4CAF50;
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-icon button:hover {
+    background-color: #45a049;
+}
+.menu-icon button {
+    background-color: #4CAF50;
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+.button.small {
+    padding: 8px 12px;
+    width: auto;
+    display: inline-block;
+    margin: 5px;
+}
+.remove-form {
+    background-color: red;
+}
+.remove-form .remove-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.accessibility-tools {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.accessibility-tools h2 {
+    margin-top: 0;
+}
+.content {
+    padding: 0 15px;
+}
+
+.search-box {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .accessibility-tools {
+        text-align: center;
+    }
+    
+    .button.small {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+}
