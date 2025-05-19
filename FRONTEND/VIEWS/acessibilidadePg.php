@@ -6,9 +6,9 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
 }
 
 // 1. Inclua o arquivo de conexão primeiro
-require_once('../MODELS/conexao_db.php');
+require_once('../../BACKEND/MODELS/conexao_db.php');
 // 2. Depois inclua o modelo
-require_once('../MODELS/acessibilidade.php');
+require_once('../../BACKEND/MODELS/acessibilidade.php');
 
 // 3. Certifique-se que $pdo está disponível
 global $pdo;
@@ -65,7 +65,7 @@ try {
                 <div class="alert error"><?= $_SESSION['erro']; unset($_SESSION['erro']); ?></div>
             <?php endif; ?>
             
-            <form method="POST" action="../CONTROLLERS/acessibilidade_controller.php">
+            <form method="POST" action="../../BACKEND/CONTROLLERS/acessibilidade_controller.php">
                 <div class="form-group checkbox">
                     <input type="checkbox" id="alto_contraste" name="alto_contraste" 
                            <?= ($altoContraste) ? 'checked' : ''; ?>>

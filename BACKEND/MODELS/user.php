@@ -16,7 +16,7 @@ class User
         // E-mail já em uso
         session_start();
         $_SESSION['erro'] = true;
-        header('Location: ../VIEWS/registerPg.php');
+        header('Location: ../../FRONTEND/VIEWS/registerPg.php');
         exit();
     } else {
         $sql = "INSERT INTO users (name, email, password, idade, profissao, objetivo, saude) 
@@ -34,7 +34,7 @@ class User
             // Usuário cadastrado com sucesso
             session_start();
             $_SESSION['erro'] = false;
-            header('Location: ../VIEWS/loginPg.php');
+            header('Location: ../../FRONTEND/VIEWS/loginPg.php');
             exit();
         } else {
             throw new Exception('Erro ao registrar o usuário: ' . implode(', ', $stmt->errorInfo()));
@@ -48,7 +48,7 @@ class User
         // Email não existe
         session_start();
         $_SESSION['erro'] = true;
-        header("Location: ../VIEWS/loginPg.php");
+        header("Location: ../../FRONTEND/VIEWS/loginPg.php");
         exit();
     } else {
         $user = $this->verificaSenha($email, $senha);
@@ -56,7 +56,7 @@ class User
             // Senha incorreta
             session_start();
             $_SESSION['erro'] = true;
-            header("Location: ../VIEWS/loginPg.php");
+            header("Location: ../../FRONTEND/VIEWS/loginPg.php");
             exit();
         } else {
             // Logando
@@ -89,7 +89,7 @@ class User
             $sintomas = $this->buscarSintomas($iduser);
             $_SESSION['sintomas'] = $sintomas;
 
-            header("Location: ../VIEWS/profilePg.php");
+            header("Location: ../../FRONTEND/VIEWS/profilePg.php");
             exit();
         }
     }
@@ -119,7 +119,7 @@ class User
             //Senha antiga errada
             session_start();
             $_SESSION['erro'] = true;
-            header("location: ../VIEWS/edit_passwordPg.php");
+            header("location: ../../FRONTEND/VIEWS/edit_passwordPg.php");
         } else {
             $sql = "UPDATE users SET password=:novaSenha WHERE email=:email";
             $stmt = $this->conexao->prepare($sql);
@@ -133,7 +133,7 @@ class User
             } else {
                 echo "(ferrou) Erro ao alterar senha: " . $stmt->errorInfo()[2];
             }
-            header("Location: ../VIEWS/profilePg.php");
+            header("Location: ../../FRONTEND/VIEWS/profilePg.php");
         }
     }
     public function consultaEmail($email)

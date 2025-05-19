@@ -1,9 +1,9 @@
 <?php
 session_start();
 if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
-    header('location: VIEWS/loginPg.php');
+    header('location: FRONTEND/VIEWS/loginPg.php');
 }
 if (!empty($_SESSION['logado'])) {
-    header('location: VIEWS/profilePg.php');
+    header('location: FRONTEND/VIEWS/profilePg.php');
 }
 ?>

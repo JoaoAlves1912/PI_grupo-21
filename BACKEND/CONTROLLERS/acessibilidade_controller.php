@@ -4,7 +4,7 @@ require_once('../MODELS/conexao_db.php');
 require_once('../MODELS/acessibilidade.php');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header("Location: ../VIEWS/error.php");
+    header("Location: ../../FRONTEND/VIEWS/error.php");
     exit();
 }
 
@@ -23,6 +23,6 @@ try {
     $_SESSION['erro'] = "Erro ao salvar: " . $e->getMessage();
 }
 
-header("Location: ../VIEWS/acessibilidadePg.php");
+header("Location: ../../FRONTEND/VIEWS/acessibilidadePg.php");
 exit();
 ?>

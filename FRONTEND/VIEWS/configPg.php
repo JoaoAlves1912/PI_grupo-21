@@ -32,7 +32,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
       <!-- Botões de Navegação -->
       <button class="button" onclick="location.href='edit_passwordPg.php'">Alterar senha</button>
-      <form action="../CONTROLLERS/logout_controller.php" method="POST" style="display: inline;">
+      <form action="../../BACKEND/CONTROLLERS/logout_controller.php" method="POST" style="display: inline;">
         <input type="hidden" name="logout" value="true">
         <button class="button" type="submit" onclick="return confirm('Tem certeza que deseja sair?')">Sair</button>
       </form>

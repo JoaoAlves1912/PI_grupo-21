@@ -31,7 +31,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                 <div class="alert error"><?= $_SESSION['erro']; unset($_SESSION['erro']); ?></div>
             <?php endif; ?>
             
-            <form method="POST" action="../CONTROLLERS/consulta_controller.php">
+            <form method="POST" action="../../BACKEND/CONTROLLERS/consulta_controller.php">
                 <div class="form-group">
                     <label for="data">Data:</label>
                     <input type="date" id="data" name="data" required>
@@ -75,7 +75,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                                 <p><strong>Histórico:</strong> <?= $consulta['historico']; ?></p>
                             <?php endif; ?>
                             
-                            <form class="remove-form" method="POST" action="../CONTROLLERS/cancelarcons_controller.php" style="margin-top: 10px;">
+                            <form class="remove-form" method="POST" action="../../BACKEND/CONTROLLERS/cancelarcons_controller.php" style="margin-top: 10px;">
                                 <input type="hidden" name="id_consulta" value="<?= $consulta['id']; ?>">
                                 <button type="submit" name="cancelar" class="remove-btn">Cancelar Consulta</button>
                             </form>

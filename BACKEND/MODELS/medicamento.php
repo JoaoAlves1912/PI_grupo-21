@@ -23,7 +23,7 @@ class Medicamento
             $medicamentos = $this->buscarMedicamentos($userId);
             $_SESSION['medicamentos'] = $medicamentos;
 
-            header('Location: ../VIEWS/medicamentoPg.php');
+            header('Location: ../../FRONTEND/VIEWS/medicamentoPg.php');
 
             return true; // Medicamento cadastrado com sucesso
         } else {
@@ -52,7 +52,7 @@ class Medicamento
             $medicamentos = $this->buscarMedicamentos($iduser);
             $_SESSION['medicamentos'] = $medicamentos;
 
-            header('Location: ../VIEWS/medicamentoPg.php');
+            header('Location: ../../FRONTEND/VIEWS/medicamentoPg.php');
 
             return true; // Medicamento deletado com sucesso
         } else {

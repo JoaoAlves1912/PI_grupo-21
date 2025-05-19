@@ -19,10 +19,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } catch (Exception $e) {
         session_start();
         $_SESSION['erro'] = true;
-        header('Location: ../VIEWS/registerPg.php');
+        header('Location: ../../FRONTEND/VIEWS/registerPg.php');
         exit();
     }
 } else {
-    header('Location: ../VIEWS/error.php');
+    header('Location: ../../FRONTEND/VIEWS/error.php');
     exit();
 }

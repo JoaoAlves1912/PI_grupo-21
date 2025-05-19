@@ -21,7 +21,7 @@ if (!empty($_SESSION['logado'])) {
             <h1>Health Buddy</h1>
         </div>
         <div class="content">
-            <form action="../CONTROLLERS/register_controller.php" method="POST">
+            <form action="../../BACKEND/CONTROLLERS/register_controller.php" method="POST">
                 <fieldset>
                     <legend>Registrar</legend>
                     <div class="form-group">

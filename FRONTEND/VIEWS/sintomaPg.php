@@ -27,7 +27,7 @@ $sintomas = isset($_SESSION['sintomas']) ? $_SESSION['sintomas'] : [];
         </div>
         <h1>Gestão de Sintomas</h1>
         <!-- Formulário de Entrada -->
-        <form action="../CONTROLLERS/cadastrosin.php" method="post">
+        <form action="../../BACKEND/CONTROLLERS/cadastrosin.php" method="post">
             <div class="form-group">
                 <label for="sintoma">Nome do Sintoma:</label>
                 <input type="text" id="sintoma" name="sintoma" placeholder="Exemplo: Dor de cabeça">

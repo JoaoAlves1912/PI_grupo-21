@@ -3,8 +3,8 @@ session_start();
 if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
     header('location: ../index.php');
 
-require_once('../MODELS/conexao_db.php');
-require_once('../MODELS/medico.php');
+require_once('../../BACKEND/MODELS/conexao_db.php');
+require_once('../../BACKEND/MODELS/medico.php');
 $medico_model = new Medico($pdo);
 $especialidades = $medico_model->buscarTodasEspecialidades();
 ?>
@@ -62,7 +62,7 @@ $especialidades = $medico_model->buscarTodasEspecialidades();
             // Mostrar loading
             document.getElementById('resultados').innerHTML = '<p>Buscando médicos...</p>';
 
-            fetch(`../CONTROLLERS/medico_controller.php?especialidade=${encodeURIComponent(especialidade)}`)
+            fetch(`../../BACKEND/CONTROLLERS/medico_controller.php?especialidade=${encodeURIComponent(especialidade)}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Erro na requisição');

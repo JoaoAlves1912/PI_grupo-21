@@ -5,20 +5,20 @@ require_once('../MODELS/medicamento.php');
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $id = $_POST['id'];
-    
+    $medicamento = $_POST['medicamento'];
+    $hora = $_POST['hora'];
  
     $medicamento_model = new Medicamento($pdo);
 
     try {
-        $medicamento_model->deletar($id, $_SESSION['iduser']);
+        $medicamento_model->cadastrar($_SESSION['iduser'], $medicamento,$hora );
     } catch (Exception $e) {
         session_start();
         $_SESSION['erro'] = true;
-        header('Location: ../VIEWS/registerPg.php');
+        header('Location: ../../FRONTEND/VIEWS/registerPg.php');
         exit();
     }
 } else {
-    header('Location: ../VIEWS/error.php');
+    header('Location: ../../FRONTEND/VIEWS/error.php');
     exit();
 }

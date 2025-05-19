@@ -23,7 +23,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
             <h1>Health Buddy</h1>
         </div>
         <div class="content">
-            <form action="../CONTROLLERS/edit_password_controller.php" method="POST">
+            <form action="../../BACKEND/CONTROLLERS/edit_password_controller.php" method="POST">
                 <p>
                     <?php
                     if (!empty($_SESSION['erro'])): ?>

@@ -27,7 +27,7 @@ $medicamentos = isset($_SESSION['medicamentos']) ? $_SESSION['medicamentos'] : [
         </div>
         <h1>Medicamentos</h1>
         <!-- Formulário de Entrada -->
-        <form action="../CONTROLLERS/cadastromed.php" method="post">
+        <form action="../../BACKEND/CONTROLLERS/cadastromed.php" method="post">
             <div class="form-group">
                 <label for="medicamento">Nome do Medicamento:</label>
                 <input type="text" id="medicamento" name="medicamento" placeholder="Exemplo: Dipirona">
@@ -44,7 +44,7 @@ $medicamentos = isset($_SESSION['medicamentos']) ? $_SESSION['medicamentos'] : [
             <h2>Horário Medicamentos</h2>
             <!-- Sintomas serão adicionados dinamicamente -->
             <?php foreach ($medicamentos as $medicamento): ?>
-                <form action="../CONTROLLERS/removermed.php" method="post">
+                <form action="../../BACKEND/CONTROLLERS/removermed.php" method="post">
                     <div class="medicamento">
                         <h3><?php echo htmlspecialchars($medicamento['name']); ?></h3>
                         <p><?php echo htmlspecialchars(date('H:i', strtotime($medicamento['hora']))); ?></p>

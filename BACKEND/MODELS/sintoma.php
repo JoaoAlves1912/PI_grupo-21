@@ -24,10 +24,10 @@ class Sintoma
             $sintomas = $this->buscarSintomas($userId);
             $_SESSION['sintomas'] = $sintomas;
 
-            header('Location: ../VIEWS/sintomaPg.php');
+            header('Location: ../../FRONTEND/VIEWS/sintomaPg.php');
             return true; // Sintoma cadastrado com sucesso
         } else {
-            header('Location: ../VIEWS/error.php');
+            header('Location: ../../FRONTEND/VIEWS/error.php');
             throw new Exception('Erro ao cadastrar o sintoma: ' . implode(', ', $stmt->errorInfo()));
         }
     }

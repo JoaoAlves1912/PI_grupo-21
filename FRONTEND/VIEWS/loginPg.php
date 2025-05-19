@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!empty($_SESSION['logado'])) {
-    header('location: ../index.php');
+    header('location: ../../index.php');
 }
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ if (!empty($_SESSION['logado'])) {
             <h1>Health Buddy</h1>
         </div>
         <div class="content">
-            <form action="../CONTROLLERS/login_controller.php" method="POST">
+            <form action="../../BACKEND/CONTROLLERS/login_controller.php" method="POST">
                 <p>
                     <?php
                     if (!empty($_SESSION['erro'])): ?>

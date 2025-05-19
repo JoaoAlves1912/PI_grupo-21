@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_model->alterarSenha($senha_atual, $senha_hash, $email);
 
 } else {
-    header("Location: ../VIEWS/error.php");
+    header("Location: ../../FRONTEND/VIEWS/error.php");
     exit();
 }
 ?>

@@ -5,7 +5,7 @@ require_once('../MODELS/Consulta.php');
 
 // Verifica se é uma requisição POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: ../VIEWS/error.php');
+    header('Location: ../../FRONTEND/VIEWS/error.php');
     exit();
 }
 
@@ -33,6 +33,6 @@ try {
     $_SESSION['erro'] = 'Erro ao cancelar: ' . $e->getMessage();
 }
 
-header('Location: ../VIEWS/consultaPg.php');
+header('Location: ../../FRONTEND/VIEWS/consultaPg.php');
 exit();
 ?>
