@@ -118,7 +118,7 @@ Samuel Azevedo
 
 ---
 
-##📬 Contato
+## 📬 Contato
 Para mais informações ou sugestões:
 
 📧 contato@healthbuddy.com
