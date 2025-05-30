@@ -1,4 +1,4 @@
-# 🩺 HealthBuddy Pro
+# 🩺 HealthBuddy
 
 O **HealthBuddy Pro** é uma solução digital inovadora voltada para o gerenciamento eficaz de **condições crônicas** e **problemas mentais**, promovendo um cuidado de saúde mais eficiente, acessível e personalizado.
 
@@ -22,7 +22,7 @@ O **HealthBuddy Pro** é uma solução digital inovadora voltada para o gerencia
 
 ## 📌 Introdução
 
-O **HealthBuddy Pro** oferece uma **plataforma inteligente e adaptativa** que melhora a adesão ao tratamento, facilita a comunicação entre todos os envolvidos no cuidado e utiliza **análise preditiva** para antecipar e prevenir complicações de saúde.
+O **HealthBuddy** oferece uma **plataforma inteligente e adaptativa** que melhora a adesão ao tratamento, facilita a comunicação entre todos os envolvidos no cuidado e utiliza **análise preditiva** para antecipar e prevenir complicações de saúde.
 
 O público-alvo inclui:
 - Pacientes com doenças crônicas (diabetes, hipertensão, doenças respiratórias, cardíacas, autoimunes).
@@ -39,7 +39,7 @@ Inclui ainda:
 
 ## 🧠 Justificativa
 
-O desenvolvimento do HealthBuddy Pro surgiu da **necessidade de centralizar o gerenciamento de enfermidades crônicas**, facilitando o acompanhamento por parte de pacientes, cuidadores e profissionais da saúde. A plataforma preenche lacunas no cuidado contínuo, promovendo uma melhor **adesão ao tratamento**, reduzindo complicações e **melhorando a qualidade de vida**.
+O desenvolvimento do HealthBuddy surgiu da **necessidade de centralizar o gerenciamento de enfermidades crônicas**, facilitando o acompanhamento por parte de pacientes, cuidadores e profissionais da saúde. A plataforma preenche lacunas no cuidado contínuo, promovendo uma melhor **adesão ao tratamento**, reduzindo complicações e **melhorando a qualidade de vida**.
 
 ---
 
