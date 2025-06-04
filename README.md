@@ -106,15 +106,7 @@ Desenvolver uma **plataforma intuitiva e abrangente** para:
 ## 👨‍💻 Autores
 Desenvolvido por:
 
-Alessandro Alves Damasceno
-
-Erian Vieira Tomé
-
-Gabriel Alexandre Fonseca Mendes
-
 João Vitor de Carvalho Alves
-
-Samuel Azevedo
 
 ---
 
